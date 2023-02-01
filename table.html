@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width:100%;
+            border:2px solid red;
+            border-collapse:collapse
+        }
+        th,td{
+            border:2px solid red;
+            padding:10px;
+        }
+        #r1{
+            background-color: yellow;
+            
+        }
+       /* tr:nth-child(odd){
+            background-color: yellow;
+        }
+        tr:nth-child(even){
+            background-color: tomato;
+        }*/
+        .colx{
+            background-color: yellow;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup span="1" class="colx"></colgroup>
+       <tr id="r1">
+        <th>Day</th>
+        <th>Period 1</th>
+        <th>Period 2</th>
+        <th>Period 3</th>
+       </tr>
+
+       <tr>
+        <td>Monday</td>
+        <td rowspan="2" align="center">Maths</td>
+        <td>English</td>
+        <td>History</td>
+       </tr>
+       <tr>
+        <td>Tuesday</td>
+        
+        <td>Science</td>
+        <td>Geography</td>
+       </tr>
+       <tr>
+        <td>Wednesday</td>
+        <td>History</td>
+        <td>Science</td>
+        <td>Geography</td>
+       </tr>
+       <tr>
+        <td>Thursday</td>
+        <td>CS</td>
+        <td colspan="2" align="center">English</td>
+        
+       </tr>
+
+
+
+    </table>
+</body>
+</html>
