@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f6f5f7;
+            font-family: 'Open Sans',sans-serif;
+            margin-bottom: 50px;
+        }
+        .txtCtr{
+            text-align: center;
+        }
+        .pbcontainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .pricing-box{
+            background-color: #ffffff;
+            box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+            border-radius: 4px;
+            flex: 1;
+            padding: 0 30px 30px;
+            margin: 2%;
+            min-width: 250px;
+            max-width: 350px;
+        }
+        .pricing-box h5 {
+            text-transform: uppercase;
+        }
+        .price{
+            margin: 24px 0;
+            font-size: 36px;
+            font-weight: 900;
+        }
+        .price sub,.price sup{
+            font-size: 16px;
+            font-weight: 100;
+            text-align: center;
+        }
+        .ftr{
+            padding: 0;
+            list-style-type: none;
+        }
+        .ftr li{
+            font-weight: 100;
+            padding: 12px 0;
+            text-align: center;
+        }
+        .ftr li:not(:last-of-type){
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .btn{
+            border-radius: 25px;
+            border: none;
+            background-color: #ec1362;
+            color: #ffffff;
+            cursor: pointer;
+            padding:10px 15px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            transition: all 0.1s ease-in-out;
+        }
+        .btn:hover{
+         box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+         transform: translateY(-3px);
+
+        }
+        .pricing-box-bg-image{
+            background-image: url('pricingPhoto.jpg') ;
+            background-size: cover;
+            background-position: center center;
+            color: #ffffff;
+        }
+        .pricing-box-bg-image .ftr li{
+            border-bottom-color: rgba(255,255,255,1);
+
+        }
+        .pricing-box-bg-image .btn{
+            background-color: #ffffff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="txtCtr">Pick the best plan for you</h1>
+    <div class="pbcontainer">
+        <div class="pricing-box text-center">
+            <h5>Free</h5>
+            <p class="price">
+                <sup>$</sup>0<sub>/mo</sub>
+            </p>
+            <ul class="ftr">
+                <li>
+                    <strong>1</strong> Project
+                </li>
+                <li>
+                    <strong>5</strong> Team Members
+                </li>
+                <li>
+                    <strong>50</strong> Personal Projects
+                </li>
+                <li>
+                    <strong>5000</strong> Messages
+                </li>
+            </ul>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="pricing-box pricing-box-bg-image text-center">
+            <h5>Premium</h5>
+            <p class="price">
+                <sup>$</sup>40<sub>/mo</sub>
+            </p>
+            <ul class="ftr">
+                <li>
+                    <strong>5</strong> Project
+                </li>
+                <li>
+                    <strong>20</strong> Team Members
+                </li>
+                <li>
+                    <strong>100</strong> Personal Projects
+                </li>
+                <li>
+                    <strong>15000</strong> Messages
+                </li>
+            </ul>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="pricing-box text-center">
+            <h5>Platinum</h5>
+            <p class="price">
+                <sup>$</sup>84<sub>/mo</sub>
+            </p>
+            <ul class="ftr">
+                <li>
+                    <strong>25</strong> Project
+                </li>
+                <li>
+                    <strong>50</strong> Team Members
+                </li>
+                <li>
+                    <strong>500</strong> Personal Projects
+                </li>
+                <li>
+                    <strong>50000</strong> Messages
+                </li>
+            </ul>
+            <button class="btn">Get Started</button>
+        </div>
+    </div>
+</body>
+</html>
